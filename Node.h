@@ -1,9 +1,8 @@
 #include <ostream>
-#include "List.h"
 
 template <typename T>
 
-class Node : public List<T>{
+class Node{
 	public:
 		T data;
 		Node<T>* next;
