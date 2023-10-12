@@ -15,5 +15,8 @@ class ListArray : public List<T>{
 		ListArray();
 		~ListArray();
 		T operator[](int pos);
-		friend std::ostream& operator<<(std::ostream &out, const ListArray<T> &List);
+		// Declaración de la función amiga
+    		template <typename U>
+    		friend std::ostream& operator<<(std::ostream &out, const ListArray<U> &list);
+
 };
