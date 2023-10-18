@@ -13,5 +13,6 @@ class ListLinked : public List<T>{
 		ListLinked();
 		~ListLinked();
 		T operator[](int pos);
+		template <typename U>
 		friend std::ostream& operator<<(std::ostream &out, const ListLinked<T> &List);
 };

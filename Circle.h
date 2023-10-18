@@ -12,5 +12,5 @@ class Circle : public Shape {
     	void set_center(Point2D p);
     	double get_radius() const;
     	void set_radius(double r);
-    	std::ostream& operator<<(std::ostream &out, const Circle &c);
+    	friend std::ostream& operator<<(std::ostream &out, const Circle &c);
 };
